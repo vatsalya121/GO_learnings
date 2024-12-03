@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 // jwttoken := 5646   // here this novar methpd is nolt allowed as this isnt inside any declared method
+// var jwttoken = 5646 //allowed
+const LoginToken string = "gfbchgdv" //Public:first letter capital signifies that can be used from anywhere
 
 func main() {
 	var username string = "Vatsalya"
@@ -26,5 +28,8 @@ func main() {
 	systemm := "munna" //only allowed inside any declared method
 	fmt.Println(systemm)
 	fmt.Printf("Variable is of type: %T \n", systemm)
+
+	fmt.Println(LoginToken)
+	fmt.Printf("Variable is of type: %T \n", LoginToken)
 
 }
